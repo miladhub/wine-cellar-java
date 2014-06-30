@@ -11,10 +11,15 @@ Set Up:
 1. Install MySQL (instructions are for Ubuntu)
 
     sudo apt-get install mysql-server
+    
     mysql -u root -p
+    
     create schema cellar
+    
     create user 'cellar'@'localhost' identified by 'cellar';
+    
     grant all privileges on cellar.* to 'cellar'@'localhost';
+    
     quit
 
 2. Execute cellar.sql to create and populate the "wine" table:
