@@ -11,11 +11,11 @@ Set Up:
 1. Install MySQL (instructions are for Ubuntu)
 
     sudo apt-get install mysql-server
-    > mysql -u root -p
-    > create schema cellar
-    > create user 'cellar'@'localhost' identified by 'cellar';
-    > grant all privileges on cellar.* to 'cellar'@'localhost';
-    > quit
+    mysql -u root -p
+    create schema cellar
+    create user 'cellar'@'localhost' identified by 'cellar';
+    grant all privileges on cellar.* to 'cellar'@'localhost';
+    quit
 
 2. Execute cellar.sql to create and populate the "wine" table:
 
@@ -27,11 +27,9 @@ Set Up:
     
 4. Copy target/cellar.war to $JBOSS_HOME/standalone/deployments
 
-Access the application via
+Access the application via browser at: http://localhost:18080/cellar/
 
-# Browser at: http://localhost:18080/cellar/
-
-# Command line:
+or via command line:
 
     curl -i -H "Accept: application/json" -X GET http://localhost:18080/cellar/rest/wines
 
