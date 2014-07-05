@@ -4,8 +4,6 @@ The Wine Cellar application is documented [here](http://coenraets.org).
 
 This application provides an example of building a complete RESTful API in Java using JAX-RS and Jersey, consuming these services using jQuery.
 
-**NOTE** - Port 18080 is assumed for JBoss.
-
 Set Up:
 
 1. Install MySQL (instructions are for Ubuntu)

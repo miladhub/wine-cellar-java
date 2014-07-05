@@ -1,7 +1,6 @@
 package org.coenraets.cellar;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.SQLException;
 import javax.naming.InitialContext;
 import javax.sql.DataSource;
@@ -17,7 +16,7 @@ public class ConnectionHelper {
 			throw new IllegalStateException(e);
 		}
 	}
-	
+
 	public static void close(Connection connection) {
 		try {
 			if (connection != null) {
